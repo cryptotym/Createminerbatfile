@@ -46,6 +46,10 @@ autoStartFile.write("tasklist|find /i \"sgminer.exe\" >NUL\n")
 autoStartFile.write(errorCheck)
 autoStartFile.write("tasklist|find /i \"sgminer.exe\" >NUL\n")
 autoStartFile.write(errorCheck)
+autoStartFile.write("timeout /t 7200\n")
+autoStartFile.write(errorCheck)
+autoStartFile.write("goto eof\n")
+autoStartFile.write(errorCheck)
 autoStartFile.close()
 
 # os.startfile(fileName) #commented to not autorun file
